@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/null.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>lesson-25</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+        <div class="page__container">
+          <div class="search">
+            <form
+              class="search__form"
+              action="files/sendmail/sendmail.php"
+              method="POST"
+            >
+              <div class="search__line">
+                <input
+                  type="text"
+                  name="search"
+						maxlength="40"
+                  data-error="Error"
+                  placeholder="Search"
+                  autocomplete="off"
+                  class="search__input"
+                />
+                <div class="search__counter">
+                  *Залишилось
+                  <span> 40 </span>
+                  символів для вводу
+                </div>
+              </div>
+              <div type="submit" class="search__button"></div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+</html>
